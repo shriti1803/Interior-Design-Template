@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+div {
+    display: flex;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.container {
+    max-width: 144rem;
+    min-width: 32rem;
+    margin: 0 auto;
+    // padding: 20px;
+
+    .header {
+        flex-direction: column;
+        width: 32rem;
+        min-width: 24rem;
+        height: 100vh;
+        color: white;
+        background-color: #f44336;
+        overflow-y: auto;
+        position: sticky;
+        padding: 6rem;
+        gap: 4rem;
+        top: 0;
+
+        .header-name {
+            flex-direction: column;
+            font-weight: 700;
+            font-size: 3rem;
+        }
+
+        .navbar {
+            flex-direction: column;
+            font-weight: 700;
+            font-size: 2rem;
+            gap: 1.5rem;
+            & :hover {
+                color: black;
+                background-color: white;
+            }
+        }
+    }
+
+    .content-section {
+        width: 100%;
+        flex-direction: column;
+        .heading-title {
+            flex-direction: column;
+            padding: 3rem;
+            gap: 2rem;
+            .heading-name {
+                font-size: 4rem;
+                font-weight: 600;
+            }
+            .heading-type {
+                font-size: 3.5rem;
+                font-weight: 600;
+                color: #f44336;
+            }
+            .heading-line {
+                width: 5rem;
+                border: 0.5rem solid #f44336;
+                border-radius: 0.5rem;
+            }
+        }
+
+        .images {
+            display: grid;
+            gap: 40px;
+            grid-template-columns: 1fr 1fr;
+            padding: 2rem;
+            gap: 2rem;
+
+            .image {
+                justify-content: center;
+            }
+        }
+
+        .heading-type {
+            font-size: 3.5rem;
+            font-weight: 600;
+            color: #f44336;
+        }
+
+        .heading-underline {
+            width: 5rem;
+            border: solid #f44336;
+            border-radius: 0.5rem;
+        }
+    }
+}
+
+.image img {
+    max-width: 500px;
+}

@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+div {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  max-width: 144rem;
+  min-width: 32rem;
+  margin: 0 auto;
+}
+.container .header {
+  flex-direction: column;
+  width: 32rem;
+  min-width: 24rem;
+  height: 100vh;
+  color: white;
+  background-color: #f44336;
+  overflow-y: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  padding: 6rem;
+  gap: 4rem;
+  top: 0;
+}
+.container .header .header-name {
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 3rem;
+}
+.container .header .navbar {
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 2rem;
+  gap: 1.5rem;
+}
+.container .header .navbar :hover {
+  color: black;
+  background-color: white;
+}
+.container .content-section {
+  width: 100%;
+  flex-direction: column;
+}
+.container .content-section .heading-title {
+  flex-direction: column;
+  padding: 3rem;
+  gap: 2rem;
+}
+.container .content-section .heading-title .heading-name {
+  font-size: 4rem;
+  font-weight: 600;
+}
+.container .content-section .heading-title .heading-type {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #f44336;
+}
+.container .content-section .heading-title .heading-line {
+  width: 5rem;
+  border: 0.5rem solid #f44336;
+  border-radius: 0.5rem;
+}
+.container .content-section .images {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem;
+  gap: 2rem;
+}
+.container .content-section .images .image {
+  justify-content: center;
+}
+.container .content-section .heading-type {
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: #f44336;
+}
+.container .content-section .heading-underline {
+  width: 5rem;
+  border: solid #f44336;
+  border-radius: 0.5rem;
+}
+
+.image img {
+  max-width: 500px;
+}/*# sourceMappingURL=style.css.map */
